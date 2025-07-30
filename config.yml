@@ -1,0 +1,13 @@
+# Configuration file for WhatsApp Chat Parser
+
+# Data file paths
+data:
+  folder: "data"
+  chat_file_name: "Denese_chat.txt"
+  output_file_name: "whatsapp_parsed_data.csv"
+
+# Parsing configuration
+parsing:
+  encoding: "utf-8"
+  max_sample_messages: 3
+  max_display_message_length: 500
