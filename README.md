@@ -33,20 +33,6 @@ WhatsAppWrapped/
 ├── data/                       # Data folder
 │   ├── whatsapp_parsed_data.csv
 │   └── [your_chat_file.txt]
-├── frontend/                   
-│   ├── package.json           
-│   ├── tsconfig.json          
-│   ├── public/                # Static assets
-│   │   ├── index.html
-│   │   └── manifest.json
-│   └── src/                   # Source code
-│       ├── index.tsx          
-│       ├── App.tsx            
-│       ├── index.css          
-│       ├── App.css            
-│       └── components/        # React components
-│           ├── WelcomeScreen.tsx
-│           └── WelcomeScreen.css
 ├── requirements.txt            # Python dependencies
 ├── README.md                   # This file
 └── LICENSE                     # License information
@@ -78,14 +64,7 @@ WhatsAppWrapped/
    python -m spacy download en_core_web_sm
    ```
 
-4. **Install frontend dependencies**
-   ```bash
-   cd frontend
-   npm install
-   cd ..
-   ```
-
-5. **Export your WhatsApp chat**
+4. **Export your WhatsApp chat**
    - Open WhatsApp on your phone
    - Go to the chat you want to analyze
    - Tap on contact/group name → Export Chat → Without Media
@@ -143,12 +122,6 @@ display:
 - **emoji**: Emoji processing
 - **PyYAML**: Configuration file handling
 
-### **Frontend (TypeScript/React)**
-- **React 18**: Modern React with hooks
-- **TypeScript**: Type-safe JavaScript
-- **Framer Motion**: Smooth animations and transitions
-- **CSS3**: Modern styling with gradients and effects
-- **Plotly.js**: Interactive data visualizations
 
 ## 📝 Data Privacy
 
