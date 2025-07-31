@@ -1,4 +1,4 @@
-# WhatsApp Chat Analysis 📱💬
+# WhatsApp Wrapped 📱💬
 ![Python](https://img.shields.io/badge/python-3.11%2B-blue.svg)
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
 [![GitHub Issues](https://img.shields.io/github/issues/aatmiyasilwal/WhatsAppWrapped.svg)](https://github.com/aatmiyasilwal/WhatsAppWrapped/issues)
@@ -6,7 +6,7 @@
 ![Contributions](https://img.shields.io/badge/contributions-welcome-brightgreen.svg)
 
 
-A comprehensive Python-based analysis tool for WhatsApp chat exports, providing deep insights into messaging patterns, sentiment analysis, emoji usage, and communication trends.
+A comprehensive analysis tool for WhatsApp chat exports, featuring a Python-based analytics engine and a modern React TypeScript frontend. Get deep insights into messaging patterns, sentiment analysis, emoji usage, and communication trends through beautiful, interactive visualizations.
 
 ## 🌟 Features
 
@@ -22,10 +22,6 @@ A comprehensive Python-based analysis tool for WhatsApp chat exports, providing 
 - **Named Entity Recognition**: Identify people, places, and organizations mentioned
 - **Video Call Tracking**: Extract and analyze video call durations
 
-### 🔍 **Specialized Features**
-- **Custom Word Pattern Tracking**: Monitor specific words or phrases over time
-- **First Instance Analysis**: Discover when specific patterns first appeared
-- **Interactive Visualizations**: Plotly-powered charts and graphs
 
 ## 📁 Project Structure
 
@@ -37,6 +33,20 @@ WhatsAppWrapped/
 ├── data/                       # Data folder
 │   ├── whatsapp_parsed_data.csv
 │   └── [your_chat_file.txt]
+├── frontend/                   
+│   ├── package.json           
+│   ├── tsconfig.json          
+│   ├── public/                # Static assets
+│   │   ├── index.html
+│   │   └── manifest.json
+│   └── src/                   # Source code
+│       ├── index.tsx          
+│       ├── App.tsx            
+│       ├── index.css          
+│       ├── App.css            
+│       └── components/        # React components
+│           ├── WelcomeScreen.tsx
+│           └── WelcomeScreen.css
 ├── requirements.txt            # Python dependencies
 ├── README.md                   # This file
 └── LICENSE                     # License information
@@ -46,6 +56,7 @@ WhatsAppWrapped/
 
 ### Prerequisites
 - Python 3.11+
+- Node.js 16+ and npm (for frontend)
 - Jupyter Notebook or JupyterLab
 - WhatsApp chat export file
 
@@ -57,7 +68,7 @@ WhatsAppWrapped/
    cd WhatsAppWrapped
    ```
 
-2. **Install dependencies**
+2. **Install Python dependencies**
    ```bash
    pip install -r requirements.txt
    ```
@@ -67,7 +78,14 @@ WhatsAppWrapped/
    python -m spacy download en_core_web_sm
    ```
 
-4. **Export your WhatsApp chat**
+4. **Install frontend dependencies**
+   ```bash
+   cd frontend
+   npm install
+   cd ..
+   ```
+
+5. **Export your WhatsApp chat**
    - Open WhatsApp on your phone
    - Go to the chat you want to analyze
    - Tap on contact/group name → Export Chat → Without Media
@@ -76,6 +94,8 @@ WhatsAppWrapped/
 ---
 
 ### Usage
+
+#### 🔧 **Backend Analysis**
 
 1. **Configure the project**
    - Update `config.yml` with your chat file path
@@ -93,7 +113,7 @@ WhatsAppWrapped/
    jupyter notebook public_whatsapp_analysis.ipynb
    ```
    - Execute cells to generate comprehensive analysis
-   - View interactive charts and insights
+   - Export graphs as JSON for frontend integration
 
 ## 🛠️ Configuration
 
@@ -113,6 +133,7 @@ display:
 
 ## 🔧 Dependencies
 
+### **Backend (Python)**
 - **pandas**: Data manipulation and analysis
 - **matplotlib/seaborn**: Static visualizations
 - **plotly**: Interactive charts
@@ -121,6 +142,13 @@ display:
 - **wordcloud**: Word cloud generation
 - **emoji**: Emoji processing
 - **PyYAML**: Configuration file handling
+
+### **Frontend (TypeScript/React)**
+- **React 18**: Modern React with hooks
+- **TypeScript**: Type-safe JavaScript
+- **Framer Motion**: Smooth animations and transitions
+- **CSS3**: Modern styling with gradients and effects
+- **Plotly.js**: Interactive data visualizations
 
 ## 📝 Data Privacy
 

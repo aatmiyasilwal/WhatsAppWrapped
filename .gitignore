@@ -209,3 +209,5 @@ __marimo__/
 .DS_Store
 data
 whatsapp_analysis.ipynb
+
+frontend/node_modules
